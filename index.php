@@ -37,4 +37,5 @@ $tram = new TramWithDoorsPassengers('AA3456', 1, $ts->getStopByName('Depo'));
 $ts->addTransport($tram->enableLogs());
 
 $ts->moveByLoop($ts->getTransportByNumber('AA3456'), $ts->getLoopByNumber(10));
+
 $ts->moveTo($ts->getTransportByNumber('AA3456'), $ts->getStopByName('Depo'));
