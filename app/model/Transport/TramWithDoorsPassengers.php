@@ -27,7 +27,7 @@ class TramWithDoorsPassengers extends Tram {
      * @param $count
      * @return Tram
      */
-    protected function setCarriages(int $count)
+    public function setCarriages(int $count)
     {
         parent::setCarriages($count);
         $this->setMaxPassengers();

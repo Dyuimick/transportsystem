@@ -25,7 +25,7 @@ class Tram extends AbstractTransport {
      * @param int $count
      * @return Tram
      */
-    protected function setCarriages(int $count)
+    public function setCarriages(int $count)
     {
         $this->carriageCount = $count;
 

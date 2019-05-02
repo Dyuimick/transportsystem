@@ -4,7 +4,7 @@ namespace App\Model;
 
 trait LoggerTrait {
 
-    protected $enabled;
+    protected $enabled = false;
 
     protected function log(string $message)
     {

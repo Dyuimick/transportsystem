@@ -13,7 +13,7 @@ abstract class AbstractTransport {
     use LoggerTrait;
 
     protected $engine;
-    protected $number;
+    public $number;
     protected $currentStop;
 
     public function __construct(string $number, EngineInterface $engine, Stop $currentStop)
@@ -33,7 +33,7 @@ abstract class AbstractTransport {
      * @param string $number
      * @return AbstractTransport
      */
-    protected function setNumber(string $number)
+    public function setNumber(string $number)
     {
         $this->number = $number;
 
@@ -71,7 +71,7 @@ abstract class AbstractTransport {
      * @param EngineInterface $engine
      * @return AbstractTransport
      */
-    protected function setEngine(EngineInterface $engine)
+    public function setEngine(EngineInterface $engine)
     {
         $this->engine = $engine;
 
